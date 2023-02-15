@@ -93,7 +93,7 @@ nav ul {
     }
 }
 
-@media(max-width:991px){
+@media(max-width:480px){
     nav{
         height:14vh;
     }
