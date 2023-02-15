@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: azure;
+    height: 12vh;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 3rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik 80s Fade', cursive;
+
+}
+
+.game-container{
+    display:flex;
+}
+
+.col{
+    font-size: 6rem;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    height: 25vh;
+}
+
+.col:hover{
+    background-color: rgb(203, 216, 255);
+}
+
+.img-box{
+    display: flex;
+    justify-content: center;
+}
+
+.img-box iframe{
+    width: 0;
+    transition: width 1s ease-in-out;
+    border-radius: 30px;
+}
+
+.game-info{
+    font-size: 3rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#reset{
+    margin: 1rem 0rem;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+#reset:hover{
+    background-color: red;
+    color:white;
+}
+
+@media(max-width:991px){
+    nav{
+        height:10vh;
+    }
+
+    .game-container{
+        display:block;
+    }
+
+    .game-board{
+        margin-bottom: 2rem;
+    }
+    .col{
+        height:15vh;
+    }
+
+    .game-info{
+        font-size: 2rem;
+    }
+
+    .img-box iframe{
+        height: 20vh;
+    }
+
+    #reset{
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:991px){
+    nav{
+        height:14vh;
+    }
+    
+    .col{
+        font-size: 3rem;
+    }
+    .game-board{
+        margin-bottom: 2rem;
+    }
+    .col{
+        height:12vh;
+    }
+
+    .game-info{
+        font-size: 1.5rem;
+    }
+
+    .img-box iframe{
+        height: 18vh;
+    }
+
+    #reset{
+        margin-bottom: 1rem;
+    }
+}
